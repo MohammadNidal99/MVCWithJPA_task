@@ -5,9 +5,9 @@
           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
     version="2.1">
      
-    <persistence-unit name="HRDB">
+    <persistence-unit name="BookshelfDB">
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hr" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bookshelf" />
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="1234" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

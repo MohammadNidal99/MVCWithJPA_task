@@ -10,13 +10,13 @@ import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
  
 @Configuration
-@EnableJpaRepositories(basePackages = {"jo.secondstep.hr"})
+@EnableJpaRepositories(basePackages = {"jo.secondstep.bookshelf"})
 @EnableTransactionManagement
 public class JpaConfig {
     @Bean
     public LocalEntityManagerFactoryBean entityManagerFactory() {
         LocalEntityManagerFactoryBean factoryBean = new LocalEntityManagerFactoryBean();
-        factoryBean.setPersistenceUnitName("HRDB");
+        factoryBean.setPersistenceUnitName("BookshelfDB");
           
         return factoryBean;
     }
